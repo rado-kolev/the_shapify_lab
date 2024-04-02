@@ -40,12 +40,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         // Fetch data based on the selected body part
         if (bodyPart === 'all') {
           exercisesData = await fetchData(
-            'https://exercisedb.p.rapidapi.com/exercises?limit=10000',
+            'https://exercisedb.p.rapidapi.com/exercises?limit=9999',
             exerciseOptions
           );
         } else {
           exercisesData = await fetchData(
-            `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}?limit=10000`,
+            `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}?limit=9999`,
             exerciseOptions
           );
         }

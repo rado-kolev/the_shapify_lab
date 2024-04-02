@@ -4,18 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A website with exercises GIFs" />
+    <meta name="description" content="A website with exercise GIFs" />
     <meta name="keywords" content="gif, exercise, training, shape, sculpting" />
     <meta name="author" content="Rado Kolev" />
 
     <meta property="og:title" content="The Shapify Lab" />
-    <meta property="og:description" content="A website with exercises GIFs" />
-    <meta property="og:url" content="https://the-shapify-lab.vercel.app" />
+    <meta property="og:description" content="A website with exercise GIFs" />
+    <meta property="og:url" content="https://the-shapify-lab.web.app" />
 
     <title>The Shapify Lab</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCPfobWChZHRLYZZl13F8BW4HGsuamQYWI",
+        authDomain: "the-shapify-lab.firebaseapp.com",
+        projectId: "the-shapify-lab",
+        storageBucket: "the-shapify-lab.appspot.com",
+        messagingSenderId: "835957657503",
+        appId: "1:835957657503:web:135e9f06faaaaa21de37aa"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
